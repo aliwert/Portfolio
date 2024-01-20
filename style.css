@@ -21,7 +21,7 @@ body {
 }
 
 .info h1 {
-    color: #ff4242;
+    color: #FF004D;
     font-weight: 600;
 }
 
@@ -49,4 +49,47 @@ body {
 
 .info ul li:last-child a {
     margin: 0;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font: 15px
+    ;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.link::before,
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #FF004D;
+    transform: scaleX(0);
+    transition: all 1.1s ease;
+}
+
+.link::before {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.link::after {
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+    transform: scaleX(1);
 }
