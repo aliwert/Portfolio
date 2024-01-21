@@ -57,7 +57,7 @@ ul {
     list-style: none;
 }
 
-.link {
+/* .link {
     text-decoration: none;
     color: #fff;
     font: 15px
@@ -92,4 +92,39 @@ ul {
 .link:hover::before,
 .link:hover::after {
     transform: scaleX(1);
+} */
+
+.main{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main h4 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.main h4 span {
+    color: red;
+    text-decoration: underline;
+}
+.main p.title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 8px;
+}
+
+.main p.subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 1.1rem;
+
+}
+.main img {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 8rem;
 }
